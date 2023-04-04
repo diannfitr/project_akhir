@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>City's Weather Check</title>
+    <style>
+        .temp {
+            border-radius: 10px;
+            background-color: #012443; 
+            color: rgb(211, 211, 211); 
+            display: inline-block; 
+            padding: 5px 8px;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-size: cover; 
+            height: 100vh; 
+            overflow-y: hidden;
+        }
+
+        .footer {
+            width: 100%;
+            height: 70px;
+            background-color: #012443;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 8px;
+        }
+
+        .footer h6 {
+            font-weight: 200;
+        }
+
+        .footer span {
+            color: crimson;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <h1 style="color: #F9F9F9;">Check the Weather</h1>
+            </div>
+        </div> 
+
+        <div class="row mt-2">
+            <div class="col-md-8">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control input-keyword" placeholder="Enter City's or Country's Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 result">
+        
+    </div>
+
+    <div class="footer"></div>
+      
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
